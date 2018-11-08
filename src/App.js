@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact={true} Component={Login}/>
-          <Route path="/timeline" Component={Timeline} />
+          <Route path="/" Component={Login} exact/>
+          <Route path="/timeline" Component={Timeline} exact />
         </Switch>
       </BrowserRouter>
     );
